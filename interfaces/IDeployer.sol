@@ -45,5 +45,5 @@ interface IDeployer {
     /**
      * @dev Creates and returns a new instance of the locker contract.
      */
-    function newLockerPayInKenshi() external returns (address);
+    function newLockerVestKenshi() external returns (address);
 }

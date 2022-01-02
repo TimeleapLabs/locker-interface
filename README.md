@@ -14,7 +14,7 @@ and related smart contracts:
 
 - Locker registry: `0xbFe0F6c6188551ED1C61C22dd8bB8a4747692Fa4`
 - Migration registry: `0xC21261F93360B3F9123A4fb26bbB6618aAdeFcaC`
-- Deployer: `0xaADa8d6030c590b2F7c8a0c6Eb102AE424E5413b`
+- Deployer: `0xC4f80aEffF6dAD28E0616E77C6D9ef66ac4d5Ef7`
 
 ### Testnet
 

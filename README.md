@@ -20,5 +20,8 @@ and related smart contracts:
 
 - Locker registry: `0xB174c58244853C05B05d100334b205976E6EfB3a`
 - Migration registry: `0xB050957F139Eabe15786799b0d42dc6835727557`
-- Deployer v1: `0x56C0959Ae68B315eF1458c4DB53e419DD00a6012`
-- Deployer v2: `0xb78b2470e1e1D65229868B9331Fd1EA36e97a94F`
+- Deployer: `0x3df12F9051E2b8aFd05395E2E1E3ae463eAC9611`
+
+## Tips
+
+- If you're creating the locker in your smart contract be sure to implement a protected `transferLockerOwnership` external method just in case something goes wrong, you may need to control the locker from the outside.

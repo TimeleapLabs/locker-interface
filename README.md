@@ -6,7 +6,7 @@ and related smart contracts:
 - `ILocker`: To interact with the locker contracts.
 - `IDeployer`: To deploy new lockers.
 - `ILockerRegistry`: To check whether an address is a Kenshi locker.
-- `IMigrationRegistry`: TO check whether a Kenshi locker has a migration.
+- `IMigrationRegistry`: To check whether a Kenshi locker has a migration.
 
 ## Contract addresses
 

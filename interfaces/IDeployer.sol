@@ -11,12 +11,12 @@ interface IDeployer {
      */
     function getVersion() external pure returns (uint256);
 
-    event PriceChanged(uint256 price);
+    event MinKenshiToLockChanged(uint256 price);
 
     /**
      * @dev Get the price of locker contract creation.
      */
-    function getPrice() external view returns (uint256);
+    function getMinKenshiToLock() external view returns (uint256);
 
     event PriceInKenshiChanged(uint256 price);
 
@@ -30,7 +30,7 @@ interface IDeployer {
      */
     function isKenshiLocker(address addr) external view returns (bool);
 
-    event LockerCreated(address addr);
+    event LockerCreated(address addr, address owner);
 
     /**
      * @dev Migrates a locker to a newer version.
@@ -40,10 +40,10 @@ interface IDeployer {
     /**
      * @dev Creates and returns a new instance of the locker contract.
      */
-    function newLocker() external payable returns (address);
+    function newLockerPayKenshi(address contractOwner) external returns (address);
 
     /**
      * @dev Creates and returns a new instance of the locker contract.
      */
-    function newLockerVestKenshi() external returns (address);
+    function newLockerVestKenshi(address contractOwner) external returns (address);
 }
